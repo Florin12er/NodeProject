@@ -1,17 +1,20 @@
-const express = require("express");
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
+const Book = require('../models/book.cjs')
 
-// Main authors page
-router.get("/", (req, res) => {
-  res.render("books/index");
-});
+// All Book Route
+router.get('/', async (req, res) => {
+res.render("books/new")
+})
 
-// the new Author created
-router.get("/new", (req, res) => {
-  res.render("books/new");
-});
-// create author Route
-router.post("/", (req, res) => {
-  res.send("Book Created");
-});
-module.exports = router;
+// New Book Route
+router.get('/new', (req, res) => {
+    res.send("new")
+})
+
+// Create Book Route
+router.post('/', async (req, res) => {
+    res.send("create")
+})
+
+module.exports = router

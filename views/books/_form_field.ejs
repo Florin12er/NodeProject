@@ -1,0 +1,20 @@
+<label>Name</label>
+<input type="text" name="title" value="<%= book.title%>" />
+<label>Author</label>
+<select name="author">
+  <% authors.forEach(author =>{ %> <% if (author.id === book.author) { %>
+  <option selected label="<%= author.name %>" value="<%= author.id %>"></option>
+    <% }else{%>
+  <option label="<%= author.name %>" value="<%= author.id %>"></option>
+  <% } %> <% }) %>
+</select>
+<label>Publish Date</label>
+<input type="date" />
+<label>Page Count</label>
+<input type="number" />
+<label>Cover</label>
+<input type="file" />
+<label>Description</label>
+<textarea></textarea>
+<a>Cancel</a>
+<button type="submit">Create</button>
