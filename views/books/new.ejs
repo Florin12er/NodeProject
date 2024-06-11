@@ -1,17 +1,6 @@
-<h2>New book</h2>
-<form action="/books" method="POST">
-  <label> Title </label>
-  <input type="text" />
-  <label>Author</label>
-  <input type="search" />
-  <label>Publish Date</label>
-  <input type="date" />
-  <label>Page Count</label>
-  <input type="number" />
-  <label>Cover</label>
-  <input type="file" />
-  <label>Description</label>
-  <textarea></textarea>
-  <a>Cancel</a>
-  <button type="submit">Create</button>
+<h2>New Book</h2>
+<form action="/books" method="POST" enctype="multipart/form-data">
+  <%- include('_form_field') %>
+    <a href="/books">Cancel</a>
+    <button type="submit">Create</button>
 </form>
