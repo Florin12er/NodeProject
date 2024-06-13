@@ -1,6 +1,7 @@
 @import "../fonts/stylesheet.css";
 @import "./shared/variables.css";
 @import "./shared/header.css";
+@import "./shared/buttons.css";
 
 :root {
   font-family: "Gotham Rounded";
@@ -30,4 +31,8 @@ body {
 
 .inner-container {
   margin: 0 2rem;
+}
+.page-header {
+    font-size: 2rem;
+    font-weight: 500;
 }
