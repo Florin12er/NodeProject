@@ -17,6 +17,9 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+.form-item .description {
+margin-top: 1rem;
+}
 
 .form-item:first-child {
   margin-left: 0;
@@ -60,6 +63,9 @@
 .form-item textarea {
   height: 100%;
   resize: none;
+}
+.form-item .textarea-description {
+    height: 200px;
 }
 .filepond--root {
     font-family: "Gotham Rounded";

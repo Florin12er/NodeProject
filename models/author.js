@@ -6,6 +6,10 @@ const authorSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  description: {
+    type: String,
+    required: false,
+  },
 });
 
 authorSchema.pre(
@@ -22,7 +26,7 @@ authorSchema.pre(
     } catch (error) {
       next(error);
     }
-  },
+  }
 );
 
 module.exports = mongoose.model("Author", authorSchema);

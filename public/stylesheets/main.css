@@ -7,39 +7,49 @@
 @import "./shared/book.css";
 
 :root {
-  font-family: "Gotham Rounded";
-  font-size: 20px;
-  color: var(--color-text-light);
+    font-family: "Gotham Rounded";
+    font-size: 20px;
+    color: var(--color-text-light);
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(
-    to right,
-    var(--color-background-dark),
-    var(--color-background-light)
-  );
+    background: linear-gradient(to right,
+            var(--color-background-dark),
+            var(--color-background-light));
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-  margin-bottom: 3rem;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 3rem;
 }
 
 .inner-container {
-  margin: 0 2rem;
+    margin: 0 2rem;
 }
+
 .page-header {
     font-size: 2rem;
     font-weight: 500;
 }
+
 .error-message {
     font-size: 1.5rem;
     color: hsl(var(--color-danger-hue), 100%, 50%);
+}
+
+.filepond--credits {
+    display: none;
+}
+
+.date {
+    .text-red {
+        color: hsl(var(--color-danger-hue), 100%, 50%);
+    }
 }
