@@ -37,7 +37,8 @@ router.post("/", async (req, res) => {
   } catch {
     res.render("authors/new", {
       author: author,
-            errorMessage: "Error: You need to Type the name and description of the author!!!",
+      errorMessage:
+        "Error: You need to Type the name and description of the author!!!",
     });
   }
 });

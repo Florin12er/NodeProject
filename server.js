@@ -28,7 +28,7 @@ app.use("/", indexRouter);
 app.use("/authors", authorRouter);
 app.use("/books", bookRouter);
 app.use((req, res, next) => {
-    res.status(404).render("404", { layout: false });
+  res.status(404).render("404", { layout: false });
 });
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running...");
